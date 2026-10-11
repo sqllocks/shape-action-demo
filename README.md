@@ -8,3 +8,5 @@ A demo of the [Shape](https://github.com/sqllocks/shape) GitHub Action gating pu
 - `.github/workflows/shape.yml` — on every pull request, profiles `orders`, compares it with the baseline, posts the result as a comment and fails the check on drift (`fail-on: drift`).
 
 Change `data/orders.csv` in a pull request and the check reports what moved.
+
+This repository is a public demo; the data is synthetic and safe to inspect.
