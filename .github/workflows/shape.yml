@@ -1,0 +1,15 @@
+name: Shape drift check
+on:
+  pull_request:
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  shape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: sqllocks/shape@v0.9.1
+        with:
+          fail-on: drift
+          comment: 'true'
