@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: sqllocks/shape@v0.9.1
+      - uses: sqllocks/shape@v0.9.3
         with:
           fail-on: drift
           comment: 'true'
